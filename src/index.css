@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;600;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Urbanist', sans-serif;
+  background-color: #222831;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00ADB5;
+}
+
+
+
+.todo-name {
+  padding: 1rem;
+  font-size: 4rem;
+  
+}
+
+.input-container {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+
+.todo-input {
+  padding: 10px;
+  width: 500px;
+  height: 3rem;
+  border-radius: .75rem;
+  border-color: #00ADB5;
+  border-width: 2px;
+  background-color: #ffffff;
+
+}
+
+.todo-input:focus {
+  outline: none;
+}
+
+.todo-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: .7rem;
+  cursor: pointer;
+  background-color: #00ADB5;
+  border-color: white;
+  border-width: 0px;
+  transition: .3s;
+}
+
+
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: white;
+  background-color: transparent;
+}
+
+.task-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin: .5rem;
+  padding: 5px 5px;
+  background-color: #00ADB5;
+  color: #ffffff;
+  border-radius: 1rem;
+  width: 800px;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.task-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  border-color: #00ADB5;
+  padding: 6px;
+  background-color: #222831;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.task-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #00ADB5;
+  background-color: transparent;
+  width: 2rem;
+  height: 2rem;
+}
+
+.todo-button:hover {
+  -webkit-box-shadow:0px 0px 102px 2px rgba(0,172,181,0.60);
+  -moz-box-shadow: 0px 0px 102px 2px rgba(0,172,181,0.60);
+  box-shadow: 0px 0px 102px 2px rgba(0,172,181,0.60);
+}
+
+.task-button:hover {
+  -webkit-box-shadow:0px 0px 102px 2px rgba(0,172,181,0.60);
+  -moz-box-shadow: 0px 0px 102px 2px rgba(0,172,181,0.60);
+  box-shadow: 0px 0px 102px 2px rgba(0,172,181,0.60);
+}
+
+@media screen and (min-width: 375px ) and (max-width: 900px) {
+  .header {
+    padding: 0;
+  }
+  .input-container {
+    width: 410px;
+    padding: 20px;
+}
+  .task-container {
+    width: 380px;
+  }
+}
